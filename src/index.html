@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rocket Game</title>
+    <style>
+      canvas {
+        width: 800px;
+        height: 600px;
+        border: 1px solid black;
+      }
+      #main {
+        width: 800px;
+        height: 600px;
+        border: 1px solid black;
+      }
+      .self {
+            font-weight: bold;
+            color: blue;
+          }
+
+      .player {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      img {
+          width: 48px;
+          height: 48px;
+        }
+
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <!-- <canvas id="canvas"></canvas> -->
+    <div id="main"></div>
+  </body>
+  <script src="/static/game.js"></script>
+</html>
